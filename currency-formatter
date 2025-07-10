@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double amount = sc.nextDouble();
+      
+       NumberFormat a= NumberFormat.getCurrencyInstance(Locale.US);
+       System.out.println("US: " +a.format(amount));
+       
+       Locale India=new Locale("en", "IN");
+        NumberFormat b= NumberFormat.getCurrencyInstance(India);
+       System.out.println("India: " +b.format(amount));
+       
+        NumberFormat c= NumberFormat.getCurrencyInstance(Locale.CHINA);
+       System.out.println("China: " +c.format(amount));
+       
+        NumberFormat d= NumberFormat.getCurrencyInstance(Locale.FRANCE);
+       System.out.println("France: " +d.format(amount));
+       
+    }  
+        
+       
+
+}
