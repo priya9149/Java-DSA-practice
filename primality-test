@@ -1,0 +1,14 @@
+import java.io.*;
+import java.math.*;
+import java.util.*;
+import java.math.BigInteger;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+       Scanner sc=new Scanner(System.in);
+       BigInteger num=sc.nextBigInteger();
+      System.out.print(num.isProbablePrime(100)? "prime":"not prime");
+    }
+}
